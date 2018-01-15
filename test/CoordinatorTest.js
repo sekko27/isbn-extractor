@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const {assert} = require('chai');
 
 const {Coordinator} = require.main.require('index');
@@ -11,7 +12,7 @@ function extract(input) {
             result = result.concat(r);
         }
     }
-    return result;
+    return _.uniq(result);
 }
 describe('Coordinator', function() {
     it('should extract (emit) valid ISBN-10', function() {
@@ -23,6 +24,6 @@ describe('Coordinator', function() {
             ISBN-10: 0-470-03746-6
             Manufactured in the United States of America
             10 9 8 7 6 5 4 3 2 1`;
-        return assert.deepEqual(extract(text), ['9780470037461', '0470037466']);
+        return assert.deepEqual(extract(text), ['0470037466']);
     });
 });

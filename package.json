@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha -R spec --recursive test"
   },
+  "bin": {
+    "extract-isbn": "./extract.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sekko27/isbn-extractor.git"
@@ -23,7 +26,8 @@
     "bluebird": "^3.5.1",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
-    "mocha": "^4.1.0"
+    "mocha": "^4.1.0",
+    "string-to-stream": "^1.1.0"
   },
   "dependencies": {
     "lodash": "^4.17.4"
