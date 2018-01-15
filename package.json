@@ -1,0 +1,22 @@
+{
+  "name": "isbn-extractor",
+  "version": "0.0.1",
+  "description": "Extract ISBN from streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sekko27/isbn-extractor.git"
+  },
+  "keywords": [
+    "ISBN"
+  ],
+  "author": "Sekko27 <sekko272727@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sekko27/isbn-extractor/issues"
+  },
+  "homepage": "https://github.com/sekko27/isbn-extractor#readme"
+}
