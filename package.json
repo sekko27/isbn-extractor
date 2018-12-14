@@ -1,6 +1,6 @@
 {
   "name": "isbn-extractor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extract ISBN from streams",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,6 @@
     "string-to-stream": "^1.1.0"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.11"
   }
 }
